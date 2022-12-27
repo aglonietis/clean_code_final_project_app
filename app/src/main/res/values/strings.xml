@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Gala Darbs</string>
+
+    <string name="main_title">Gala Darbs</string>
+
+    <string name="calculator_title">Kalkulators</string>
+    <string name="calculator_introduction">Ievadiet tekstu:</string>
+    <string name="calculator_button_calculate_text">Aprēķināt relatīvo biežumu</string>
+
+    <string name="contacts_title">Apraksts</string>
+    <string name="contacts_text">Uzdevuma apraksts: \n\nU226. \n\nSastādīt Android lietotni, kas palīdz atšifrēt kriptogrammas. \n\nLietotājam ļauj ievadīt tekstu. \n\nLietotnei jāaprēķina katra burta parādīšanās relatīvais biežums \n\n(piem., a – 8%, ā – 1%, b – 3%, utt.).</string>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculatorActivity">
+
+    <TextView
+        android:id="@+id/calculator_introduction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculator_introduction"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@integer/app_margin"
+        android:layout_marginLeft="@integer/app_margin"
+        android:layout_marginRight="@integer/app_margin" />
+    <EditText
+        android:id="@+id/calculator_input"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:lines="@integer/app_input_lines"
+        app:layout_constraintTop_toBottomOf="@id/calculator_introduction"
+        android:layout_marginTop="@integer/app_margin"
+        android:layout_marginLeft="@integer/app_margin"
+        android:layout_marginRight="@integer/app_margin" />
+    <Button
+        android:id="@+id/calculator_button_calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/calculator_button_calculate_text"
+        app:layout_constraintTop_toBottomOf="@id/calculator_input"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@integer/app_margin"
+        android:layout_marginLeft="@integer/app_margin"
+        android:layout_marginRight="@integer/app_margin"
+        android:onClick="calculateCharFrequency" />
+    <ListView
+        android:id="@+id/calculator_result_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/calculator_button_calculate"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="@integer/app_margin">
+    </ListView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
